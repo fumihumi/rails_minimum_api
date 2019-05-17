@@ -10,6 +10,10 @@
 # See https://github.com/rubocop-hq/rubocop/blob/master/manual/configuration.md
 require: rubocop-performance
 
+# frozen_string_literal: trueを明記しなくて良い
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
 Metrics/MethodLength:
   Max: 20
 
