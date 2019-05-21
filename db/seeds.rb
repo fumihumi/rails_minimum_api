@@ -6,4 +6,4 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-%w[users].each { |table_name| require_relative "./seeds/#{table_name}.rb" }
+%w[users todos].each { |table_name| require_relative "./seeds/#{table_name}.rb" }

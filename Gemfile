@@ -38,6 +38,11 @@ group :development, :test do
   gem 'pry-rails'
   gem 'pry-doc'
   gem 'pry-byebug'
+
+  gem 'rspec-rails'
+  gem 'factory_bot_rails'
+  gem 'faker'
+
 end
 
 group :development do
