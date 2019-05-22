@@ -44,6 +44,10 @@ GEM
       tzinfo (~> 1.1)
     arel (9.0.0)
     ast (2.4.0)
+    autodoc (0.7.2)
+      actionpack
+      activesupport (>= 3.0.0)
+      rspec
     bcrypt (3.1.12)
     bootsnap (1.4.4)
       msgpack (~> 1.0)
@@ -138,6 +142,10 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
+    rspec (3.8.0)
+      rspec-core (~> 3.8.0)
+      rspec-expectations (~> 3.8.0)
+      rspec-mocks (~> 3.8.0)
     rspec-core (3.8.0)
       rspec-support (~> 3.8.0)
     rspec-expectations (3.8.3)
@@ -192,6 +200,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  autodoc
   bcrypt (~> 3.1.7)
   bootsnap (>= 1.1.0)
   byebug
