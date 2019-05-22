@@ -7,6 +7,8 @@ class UserSerializer
     obj.created_at.to_s
   end
 
+  has_many :todos
+
   def self.call(user, options = {})
     new(user, options).serialized_json
   end
