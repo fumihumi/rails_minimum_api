@@ -7,7 +7,7 @@ class JsonWebToken
 
   class << self
     def from_user(user)
-      encode(id: user.id)
+      encode(user_id: user.id)
     end
 
     def to_user(token)
@@ -23,5 +23,4 @@ class JsonWebToken
       JWT.decode(token, SECRET_KEY, true, algorithm: 'HS256')[0]
     end
   end
-
 end

@@ -4,7 +4,9 @@ Rails.application.routes.draw do
     get 'login' => 'authentication#login'
     post 'register' => 'authentication#register'
     get 'me' => 'users#me'
-    resources :users, only: %i[index show]
+    resources :users, only: %i[show]
+
+    resources :todos, only: %i[index show create update]
   end
 
   get 'login' => 'api/authentication#login'
