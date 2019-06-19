@@ -3,7 +3,7 @@ module Api
     before_action :set_todo, only: %i[show]
 
     def index
-      todos = Todo.all
+      todos = current_user.todos.all
 
       render json: TodoSerializer.new(todos).serializable_hash, status: :ok
     end
